@@ -9,7 +9,7 @@ const Stock = database.define('stock',{
           autoIncrement: true
      },
      ticker:{
-          type: Sequelize.STRING,
+          type: Sequelize.STRING(7),
           allowNull: false
      },
      price:{
